@@ -26,9 +26,9 @@ export interface IHintProps {
 export const Hint: React.FC<IHintProps> = props => {
     const child = React.Children.only(props.children);
 
-    if (child.type?.toString()?.toLowerCase() !== 'input') {
-        throw new TypeError(`react-autocomplete-hint: 'Hint' only accepts an 'input' element as child.`);
-    }
+    // if (child.type?.toString()?.toLowerCase() !== 'input') {
+    //     throw new TypeError(`react-autocomplete-hint: 'Hint' only accepts an 'input' element as child.`);
+    // }
 
     const {
         options,
